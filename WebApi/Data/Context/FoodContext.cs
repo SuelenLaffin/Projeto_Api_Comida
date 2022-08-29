@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Data.Context
 {
-    internal class FoodContext : DbContext
+    public class FoodContext : DbContext
     {
         public DbSet<Doce> Doces { get; set; }
         public DbSet<Salgado> Salgados { get; set; }
