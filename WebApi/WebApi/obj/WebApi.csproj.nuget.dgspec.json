@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gregory.Zimmer\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\suelen.laffin\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gregory.Zimmer\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\suelen.laffin\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gregory.Zimmer\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\WebApi\\WebApi.csproj",
-        "projectName": "WebApi",
-        "projectPath": "C:\\Users\\Gregory.Zimmer\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\WebApi\\WebApi.csproj",
-        "packagesPath": "C:\\Users\\Gregory.Zimmer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gregory.Zimmer\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\WebApi\\obj\\",
+        "projectUniqueName": "C:\\Users\\suelen.laffin\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\Data\\Data.csproj",
+        "projectName": "Data",
+        "projectPath": "C:\\Users\\suelen.laffin\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\suelen.laffin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\suelen.laffin\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Gregory.Zimmer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\suelen.laffin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,6 +28,87 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\suelen.laffin\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\WebApi\\WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\suelen.laffin\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\WebApi\\WebApi.csproj",
+        "projectName": "WebApi",
+        "projectPath": "C:\\Users\\suelen.laffin\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\WebApi\\WebApi.csproj",
+        "packagesPath": "C:\\Users\\suelen.laffin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\suelen.laffin\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\suelen.laffin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\suelen.laffin\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\suelen.laffin\\Source\\Repos\\Projeto_Api_Comida\\WebApi\\Data\\Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -59,7 +136,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -71,7 +149,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
