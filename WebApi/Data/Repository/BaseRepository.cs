@@ -1,4 +1,5 @@
-﻿using Data.Model;
+﻿using Data.Context;
+using Data.Model;
 
 namespace Data.Repository
 {
@@ -6,27 +7,59 @@ namespace Data.Repository
     {
         public string Create(T entity)
         {
-            throw new NotImplementedException();
+            using (FoodContext foodContext = new FoodContext())
+            {
+                foodContext.Set<T>().Add(entity);
+                foodContext.SaveChanges();
+            }
+            return "Objeto criado";
         }
 
-        public string Delete(T entity)
+        public string Delete(int id)
         {
-            throw new NotImplementedException();
+            T entity = GetById(id);
+
+            using (FoodContext foodContext = new FoodContext())
+            {
+                foodContext.Entry<T>(entity).State = Microsoft.EntityFrameworkCore.EntityState.Deleted;
+                foodContext.SaveChanges();
+            }
+            return "Objeto deletado";
         }
 
         public List<T> GetAll()
         {
-            throw new NotImplementedException();
+            List<T> list = new List<T>();
+
+            using (FoodContext foodContext = new FoodContext())
+            {
+                list = foodContext.Set<T>().ToList();
+            }
+
+            return list;
         }
 
         public T GetById(int id)
         {
-            throw new NotImplementedException();
+            T entity = null;
+
+            using (FoodContext foodContext = new FoodContext())
+            {
+                entity = foodContext.Set<T>().Find(id);
+            }
+
+            return entity;
         }
 
         public string Update(T entity)
         {
-            throw new NotImplementedException();
+            using (FoodContext foodContext = new FoodContext())
+            {
+                foodContext.Entry<T>(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                foodContext.SaveChanges();
+            }
+            return "Objeto alterado";
         }
+
     }
 }

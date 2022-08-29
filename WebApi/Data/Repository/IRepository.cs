@@ -6,7 +6,7 @@ namespace Data.Repository
     {
         string Create(T entity);
         string Update(T entity);
-        string Delete(T entity);
+        string Delete(int id);
         List<T> GetAll();
         T GetById(int id);
     }
