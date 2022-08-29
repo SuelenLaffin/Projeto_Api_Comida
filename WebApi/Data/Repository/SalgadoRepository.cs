@@ -2,7 +2,7 @@
 
 namespace Data.Repository
 {
-    internal class SalgadoRepository : BaseRepository<Salgado>
+    public class SalgadoRepository : BaseRepository<Salgado>
     {
     }
 }
