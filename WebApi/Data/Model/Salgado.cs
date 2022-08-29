@@ -1,6 +1,6 @@
 ﻿namespace Data.Model
 {
-    internal class Salgado : BaseModel
+    public class Salgado : BaseModel
     {
         public string Nome { get; set; }
 
